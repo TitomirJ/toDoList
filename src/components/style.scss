@@ -1,0 +1,105 @@
+body {
+  background: linear-gradient(to top, #ef8eaf, #c4ceff);
+  min-height: 100vh;
+}
+
+input, button{
+  outline: none;
+}
+
+.toDo {
+  &-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+
+  &-body {
+    background: white;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-top:20px;
+
+    form {
+      width: 203px;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+input {
+  border: none;
+  border-bottom: 1px solid #b2b2b2;
+}
+ul {
+  padding: 0;
+  list-style: none;
+  width: 200px;
+
+  li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+  }
+}
+
+.btn{
+
+  &-block{
+    display: flex;
+  }
+
+  &-Submit {
+    background: transparent;
+    border: none;
+
+    svg {
+      width: 16px;
+    }
+  }
+
+  &-Delete {
+    background: transparent;
+    border: none;
+    display: flex;
+    svg {
+      width: 16px;
+      transform: rotate(45deg);
+    }
+  }
+
+  &-Edit{
+    background: transparent;
+    border: none;
+    display: flex;
+    svg {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  &-Cancel{
+    background: #3698a5d1;
+    border: #689139;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+  }
+
+  &-Done{
+    background: pink;
+    border: pink;
+    border-radius: 3px;
+    width: 18px;
+    &_Ok{
+      background: aqua;
+      border: aqua;
+      border-radius: 3px;
+      width: 18px;
+    }
+  }
+}
